@@ -43,7 +43,7 @@
 					//只要在doc.write()方法前后加上doc.open(), doc.close()就可以了
 					//IE下有权限问题
 					//!hasBro.isIE() && doc.open();
-doc.open();
+
 					doc.write('<!DOCTYPE html>\
 						<html>\
 						<head>\
@@ -55,7 +55,7 @@ doc.open();
 					);
 
 					//!hasBro.isIE() && doc.close();
-doc.close();
+
 					editorWin = ifr.contentWindow;
 					editorDoc = doc;
 
