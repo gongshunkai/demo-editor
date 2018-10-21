@@ -42,7 +42,7 @@
 					//页面处于正在加载的状态
 					//只要在doc.write()方法前后加上doc.open(), doc.close()就可以了
 					//IE下有权限问题
-					!hasBro.isIE() && doc.open();
+					//!hasBro.isIE() && doc.open();
 
 					doc.write('<!DOCTYPE html>\
 						<html>\
@@ -54,7 +54,7 @@
 						</html>'
 					);
 
-					!hasBro.isIE() && doc.close();
+					//!hasBro.isIE() && doc.close();
 
 					editorWin = ifr.contentWindow;
 					editorDoc = doc;
